@@ -9,18 +9,30 @@
 </head>
 
 <body>
-    <div>ITEM 1</div>
     <div class="flex flex-column">
-        <div>ITEM 2.1</div>
-        <div>ITEM 2.2</div>
-        <div>ITEM 2.3</div>
+        <h1>Cálculo de IMC</h1>
+        <form id="form-imc">
+            <div>
+                <input class="altura" type="number" id="altura" step="0.01" placeholder="Altura" required>
+            </div>
+            <div>
+                <input type="number" id="peso" placeholder="Peso" required>
+            </div>
+            <div>
+                <input type="text" id="sexo" placeholder="Sexo" required>
+            </div>
+            <div>
+                <input type="checkbox" id="idade" name="idade">
+                <label class="idade-check" for="idade">Eu tenho 65 anos ou mais</label>
+            </div>
+            <div class="custom-buttons">
+            </div>
+            <button class="form-button" type="button" onclick="calcularIMC()">Calcular meu IMC</button>
+            <button class="second-button">Entenda o calculo</button>
+
+        </form>
+
     </div>
-    <div>
-        <input class="input" type="text" />
-    </div>
-    <div>ITEM 4</div>
-    <div>ITEM 5</div>
-    <div>ITEM 6</div>
 </body>
 
 </html>
